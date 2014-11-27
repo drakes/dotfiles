@@ -116,3 +116,7 @@ fi
 if [ -f /usr/share/autojump/autojump.sh ]; then
   . /usr/share/autojump/autojump.sh
 fi
+
+# add rbenv: https://github.com/sstephenson/rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
