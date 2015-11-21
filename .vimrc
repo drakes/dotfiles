@@ -80,3 +80,9 @@ call pathogen#infect()
 " spellcheck {
 	set spell
 " }
+
+" swap and backup files {
+	set backup
+	set backupdir=~/tmp
+	set dir=~/tmp
+" }
