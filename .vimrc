@@ -83,6 +83,7 @@ call pathogen#infect()
 
 " swap and backup files {
 	set backup
-	set backupdir=~/tmp
-	set dir=~/tmp
+	set backupdir=~/tmp//
+	set undodir=~/tmp//
+	set dir=~/tmp//
 " }
