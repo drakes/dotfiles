@@ -1,0 +1,7 @@
+[user]
+	email = design@3dmdesign.com
+	name = Scott Drake
+[cola]
+	tabwidth = 4
+[push]
+	default = simple
