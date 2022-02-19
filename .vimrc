@@ -28,12 +28,13 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-" plugins {
-call pathogen#infect()
-" }
-
 " different settings for specific file types {
 	filetype plugin indent on
+" }
+
+" map F1 to Escape (because it's too easy to hit accidentally) {
+	map <F1> <Esc>
+	imap <F1> <Esc>
 " }
 
 " Folding {
@@ -41,7 +42,7 @@ call pathogen#infect()
 " }
 
 " Line Numbers {
-	set nu!
+	set nu
 "}
 
 " Tab Stop {
@@ -65,7 +66,7 @@ call pathogen#infect()
 " }
 
 " Font {
-	set gfn=DejaVu\ Sans\ Mono\ 11
+	set gfn=DejaVu\ Sans\ Mono\ 11,Lucida\ Console:h9
 " }
 
 " Case-sensitive search only when pattern has uppercase {
