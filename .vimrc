@@ -89,6 +89,11 @@ endif
 	set guioptions-=T
 " }
 
+if has("gui_running")
+	" https://vim.fandom.com/wiki/Maximize_or_set_initial_window_size
+	set lines=64 columns=192
+endif
+
 " spellcheck {
 	set spell
 " }
