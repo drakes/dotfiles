@@ -38,6 +38,10 @@ endif
 	filetype plugin indent on
 " }
 
+" for all text files set 'textwidth' to 0, overriding vimrc_exmaple.vim {
+	autocmd FileType text setlocal textwidth=0
+" }
+
 " map F1 to Escape (because it's too easy to hit accidentally) {
 	map <F1> <Esc>
 	imap <F1> <Esc>
@@ -71,6 +75,10 @@ endif
 	set wrapmargin=0
 " }
 
+" join lines with only a single spac instead of two {
+ set nojoinspaces
+" }
+
 " Font {
 	set gfn=DejaVu\ Sans\ Mono\ 11,Lucida\ Console:h11
 " }
@@ -98,3 +106,10 @@ endif
 	set spell
 " }
 
+" default encoding {
+	set encoding=utf-8
+" }
+
+" insert date - with a new line {
+	nmap <F5> O<C-R>=strftime('%Y%m%d %a')<Esc><Esc>
+" }
