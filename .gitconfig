@@ -1,7 +1,20 @@
 [user]
 	email = design@3dmdesign.com
 	name = Scott Drake
-[cola]
-	tabwidth = 4
 [push]
 	default = simple
+[alias]
+	# shell expansion: https://www.atlassian.com/blog/git/advanced-git-aliases
+	fcb = "!f() {\
+		git fetch origin $1\
+		&& git checkout FETCH_HEAD\
+		&& git checkout -b $1\
+		&& git branch -u origin/$1;\
+		}; f"
+	pff = pull --ff-only
+	su = submodule update
+[rerere]
+	enabled = true
+[cola]
+	spellcheck = true
+	tabwidth = 4
