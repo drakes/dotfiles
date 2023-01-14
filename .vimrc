@@ -75,7 +75,7 @@ endif
 	set wrapmargin=0
 " }
 
-" join lines with only a single spac instead of two {
+" join lines with only a single space instead of two {
  set nojoinspaces
 " }
 
