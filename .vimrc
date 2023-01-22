@@ -34,12 +34,17 @@ elseif MySys() == "linux"
 
 endif
 
+" spellcheck, default to include camelCase checking (assume most files are code) {
+	set spell
+	set spelloptions=camel
+" }
+
 " different settings for specific file types {
 	filetype plugin indent on
 " }
 
 " for all text files set 'textwidth' to 0, overriding vimrc_exmaple.vim {
-	autocmd FileType text setlocal textwidth=0
+	autocmd FileType text setlocal textwidth=0 spelloptions=""
 " }
 
 " map F1 to Escape (because it's too easy to hit accidentally) {
@@ -101,10 +106,6 @@ if has("gui_running")
 	" https://vim.fandom.com/wiki/Maximize_or_set_initial_window_size
 	set lines=64 columns=192
 endif
-
-" spellcheck {
-	set spell
-" }
 
 " default encoding {
 	set encoding=utf-8
