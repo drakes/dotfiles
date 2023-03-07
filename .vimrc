@@ -34,6 +34,10 @@ elseif MySys() == "linux"
 
 endif
 
+" use the slow backup method to enable 'watch' mode in various dev tools {
+	set backupcopy=yes
+" }
+
 " spellcheck, default to include camelCase checking (assume most files are code) {
 	set spell
 	set spelloptions=camel
