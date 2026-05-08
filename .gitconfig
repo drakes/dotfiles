@@ -1,3 +1,5 @@
+[init]
+	defaultBranch = main
 [user]
 	email = design@3dmdesign.com
 	name = Scott Drake
