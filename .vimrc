@@ -18,9 +18,10 @@ if MySys() == "windows"
 
 " swap and backup files {
 	set backup
-	set backupdir=~/AppData/Local/Temp//
-	set undodir=~/AppData/Local/Temp//
-	set dir=~/AppData/Local/Temp//
+	set backupdir=~/AppData/Local/Temp
+	set undodir=~/AppData/Local/Temp
+	set dir=~/AppData/Local/Temp
+	set directory=~/AppData/Local/Temp
 " }
 
 elseif MySys() == "linux"
