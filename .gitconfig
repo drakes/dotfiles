@@ -17,6 +17,3 @@
 	su = submodule update
 [rerere]
 	enabled = true
-[cola]
-	spellcheck = true
-	tabwidth = 4
